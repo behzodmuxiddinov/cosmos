@@ -19,7 +19,14 @@ export default function LocaleSwitcher() {
         {i18n.locales.map((locale) => {
           return (
             <li key={locale} className='mb-1 last:mb-0'>
-              <Link href={redirectedPathName(locale)} onClick={() => localStorage.setItem('locale', `${locale}`)} className={`border-indigo p-1 rounded-md ${pathName && pathName.includes(locale) ? 'border-[2px]' : ''}`}>{locale}</Link>
+              <Link 
+                href={redirectedPathName(locale)} 
+                onClick={() => {
+                  localStorage.setItem('locale', `${locale}`)
+                }}
+                className={`border-indigo p-1 ${pathName && pathName.includes(locale) ? 'border-b-[2px]' : ''}`}>
+                  {locale}
+              </Link>
             </li>
           )
         })}

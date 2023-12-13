@@ -17,6 +17,13 @@ export interface Data {
     message : string
 }
 
+export interface MemberType {
+    id : string,
+    name : string,
+    position : string,
+    img : string
+}
+
 export interface ProductType extends Tv, Range, AirConditioning, Smartphone, Washmachine {
     id : string,
     category : string,
@@ -33,6 +40,7 @@ interface Tv {
     wifi? : boolean,
     multilang? : boolean,
     parent? : boolean,
+    support? : string,
     ddr? : string,
     flash? : string
 }
@@ -40,6 +48,9 @@ interface Tv {
 interface Range {
     hob? : string,
     oven? : string,
+    surface? : string,
+    ovendoor? : boolean,
+    electricignition? : boolean,
     flamecontrol? : boolean,
     multiflame? : boolean,
     power? : string,
@@ -49,6 +60,7 @@ interface Range {
 interface AirConditioning {
     low? : boolean,
     functions? : string,
+    restart? : boolean,
     area? : string,
     freon? : string,
     cooling? : string,
@@ -67,6 +79,7 @@ interface Smartphone {
 
 interface Washmachine {
     motor? : string,
+    automatic? :string,
     steam? : boolean,
     display? : string,
     power? : string,

@@ -13,11 +13,23 @@ const Product:FC<{product : ProductType}> = ({ product }) => {
   return (
     <Link href={`/${lng}/product/${product.id}`} className={`p-2 w-[300px] flex flex-col items-center justify-between border-2 rounded-md cursor-pointer break-words ${mode ? 'border-gray-500' : 'border-white'}`}>
         <img src={product.img} alt={product.name} className='w-full h-[200px] object-contain object-center'></img>
-        <h3 className='w-full text-center text-purple-800 text-md font-semibold'>{product.category}</h3>
-        <div className='flex text-lg text-center font-semibold break-words'>
-          <h3 className='mr-1'>{product.comp}</h3>
-          <h3 className='break-words'>{product.name}</h3>
-          {product.type && <h3 className='ml-1 break-words'>{product.type}</h3>}
+        <div className='min-h-[100px] break-all w-[95%]'>
+          <h3 className='w-full text-center text-purple-800 text-md font-semibold'>
+            {product.name}
+          </h3>
+          <div className='w-full flex flex-wrap text-lg font-semibold'>
+            <h3 className='w-full flex flex-wrap'>
+              <span className='mr-1'>{product.comp}</span>
+              <span className='mr-1'>{product.name}</span>
+              {/* <span className='mr-1'>{product.type}</span> */}
+              {product.category == 'tv' ? 'tv' : ''}
+              {product.category == 'range' ? `${t("combined")} ${t('range')}` : ''}
+              {product.category == 'air conditioning' ? `${t('air')}` : ''}
+              {product.category == 'smartphone' ? `${t('smartphone')}` : ''}
+              {product.automatic == 'automatic' ? `${t('automat')} ${t('wash')}` : ''}
+              {product.automatic == 'semiautomatic' ? `${t('semiautomat')}` : ''}
+            </h3>
+          </div>
         </div>
         <div className='w-full flex justify-between'>
           <div className='flex items-center text-center'>

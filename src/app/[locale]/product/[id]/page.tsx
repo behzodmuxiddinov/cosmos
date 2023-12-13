@@ -43,6 +43,10 @@ const page = () => {
                                 <h3 className='w-1/2'>{t("parent")}</h3>
                                 <h3 className='w-1/2'><CheckIcon/></h3>
                             </li>
+                            {product.support && <li className={`w-full flex p-1 break-words border-b-2 ${mode ? 'border-gray-700' : 'border-white'}`}>
+                                <h3 className='w-1/2'>{t("support")}</h3>
+                                <h3 className='w-1/2'>{product.support}</h3>
+                            </li>}
                             <li className={`w-full flex p-1 break-words border-b-2 ${mode ? 'border-gray-700' : 'border-white'}`}>
                                 <h3 className='w-1/2'>{t("ddr")}</h3>
                                 <h3 className='w-1/2'>{product.ddr}</h3>
@@ -71,14 +75,26 @@ const page = () => {
                                 <h3 className='w-1/2'>{t("oven")}</h3>
                                 <h3 className='w-1/2'>{t("electron")}</h3>
                             </li>
-                            <li className={`w-full flex p-1 break-words border-b-2 ${mode ? 'border-gray-700' : 'border-white'}`}>
+                            {product.surface && <li className={`w-full flex p-1 break-words border-b-2 ${mode ? 'border-gray-700' : 'border-white'}`}>
+                                <h3 className='w-1/2'>{t("surface")}</h3>
+                                <h3 className='w-1/2'>{t("gas")}</h3>
+                            </li>}
+                            {product.ovendoor && <li className={`w-full flex p-1 break-words border-b-2 ${mode ? 'border-gray-700' : 'border-white'}`}>
+                                <h3 className='w-1/2'>{t("ovendoor")}</h3>
+                                <h3 className='w-1/2'><CheckIcon/></h3>
+                            </li>}
+                            {product.electricignition && <li className={`w-full flex p-1 break-words border-b-2 ${mode ? 'border-gray-700' : 'border-white'}`}>
+                                <h3 className='w-1/2'>{t("electricignition")}</h3>
+                                <h3 className='w-1/2'><CheckIcon/></h3>
+                            </li>}
+                            {product.flamecontrol && <li className={`w-full flex p-1 break-words border-b-2 ${mode ? 'border-gray-700' : 'border-white'}`}>
                                 <h3 className='w-1/2'>{t("flame")}</h3>
                                 <h3 className='w-1/2'><CheckIcon/></h3>
-                            </li>
-                            <li className={`w-full flex p-1 break-words border-b-2 ${mode ? 'border-gray-700' : 'border-white'}`}>
+                            </li>}
+                            {product.multiflame && <li className={`w-full flex p-1 break-words border-b-2 ${mode ? 'border-gray-700' : 'border-white'}`}>
                                 <h3 className='w-1/2'>{t("multiflame")}</h3>
                                 <h3 className='w-1/2'><CheckIcon/></h3>
-                            </li>
+                            </li>}
                             <li className={`w-full flex p-1 break-words border-b-2 ${mode ? 'border-gray-700' : 'border-white'}`}>
                                 <h3 className='w-1/2'>{t("power")}</h3>
                                 <h3 className='w-1/2'>{product.power}</h3>
@@ -103,10 +119,14 @@ const page = () => {
                                 <h3 className='w-1/2'>{t("functions")}</h3>
                                 <h3 className='w-1/2'>{product.functions}</h3>
                             </li>
-                            <li className={`w-full flex p-1 break-words border-b-2 ${mode ? 'border-gray-700' : 'border-white'}`}>
+                            {product.area && <li className={`w-full flex p-1 break-words border-b-2 ${mode ? 'border-gray-700' : 'border-white'}`}>
                                 <h3 className='w-1/2'>{t("area")}</h3>
                                 <h3 className='w-1/2'>{t("upto")}</h3>
-                            </li>
+                            </li>}
+                            {product.restart && <li className={`w-full flex p-1 break-words border-b-2 ${mode ? 'border-gray-700' : 'border-white'}`}>
+                                <h3 className='w-1/2'>{t("restart")}</h3>
+                                <h3 className='w-1/2'><CheckIcon/></h3>
+                            </li>}
                             <li className={`w-full flex p-1 break-words border-b-2 ${mode ? 'border-gray-700' : 'border-white'}`}>
                                 <h3 className='w-1/2'>{t("freon")}</h3>
                                 <h3 className='w-1/2'>{product.freon}</h3>

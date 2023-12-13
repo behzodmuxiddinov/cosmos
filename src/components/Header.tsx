@@ -31,7 +31,7 @@ const Header = () => {
     
 
     return (
-        <div className={`w-full flex justify-center items-center md:px-4 sticky top-0 z-50 ${mode ? 'bg-light text-black' : 'bg-dark text-white'}`}>
+        <div className={`w-full flex justify-center items-center md:px-4 sticky top-0 z-40 ${mode ? 'bg-light text-black' : 'bg-dark text-white'}`}>
             <div className='w-[90%] md:w-full sm:w-[95%] flex justify-between items-center'>
                 <Link href={`/${lng}`} className='text-3xl font-semibold uppercase md:text-xl'>cosmos</Link>
                 <div className='flex w-max p-2 items-center'>
@@ -46,7 +46,7 @@ const Header = () => {
                     <div onClick={changeMode} className='cursor-pointer'>
                         {mode ? <LightModeIcon/> : <NightsStayIcon/>}
                     </div>
-                    <div className='hidden ml-4 md:block' onClick={() => setMenu(!menu)}>
+                    <div className='hidden ml-4 sm:block' onClick={() => setMenu(!menu)}>
                         {menu ? <CloseIcon/> : <MenuIcon/> }
                     </div>
                 </div>

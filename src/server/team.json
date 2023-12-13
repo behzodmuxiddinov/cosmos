@@ -1,0 +1,32 @@
+[
+    {
+        "id" : "1",
+        "name" : "Safarov Firdavs",
+        "position" : "director",
+        "img" : "/team/f.jpg"
+    },
+    {
+        "id" : "2",
+        "name" : "Safarov Shaxriyor",
+        "position" : "vice",
+        "img" : "/team/shax.png"
+    },
+    {
+        "id" : "3",
+        "name" : "Negmatov Asliddin",
+        "position" : "manager",
+        "img" : "/team/asliddin.jpg"
+    },
+    {
+        "id" : "4",
+        "name" : "Sodiqov Muhammad",
+        "position" : "manager",
+        "img" : "/team/muhammad.jpg"
+    },
+    {
+        "id" : "5",
+        "name" : "Choriyev Muhriddin",
+        "position" : "credit",
+        "img" : "/team/muhr.jpg"
+    }
+]

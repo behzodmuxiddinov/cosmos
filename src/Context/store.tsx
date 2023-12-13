@@ -42,12 +42,6 @@ export const GlobalContextProvider = ({ children } : any) => {
         },
         {
             id : uuidv4(),
-            path : `/${lng}/blog`,
-            name : t("blog"),
-            active : false
-        },
-        {
-            id : uuidv4(),
             path : `/${lng}/contact`,
             name : t("contact"),
             active : false

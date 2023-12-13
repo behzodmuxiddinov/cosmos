@@ -53,6 +53,19 @@
         "range" : "gaz plita",
         "air" : "konditsioner",
         "smartphone" : "smartphone",
-        "wash" : "kir yuvish mashinasi"
+        "wash" : "kir yuvish mashinasi",
+        "support" : "Ovozli qidiruvni masofadan boshqarish pulti yordamida qo'llab-quvvatlang",
+        "surface" : "Pishirish yuzasi turi",
+        "ovendoor" : "Elektr duxovkasi eshigining yechiladigan shishasi",
+        "electricignition" : "Konforkaning elektr o't oldirgichi",
+        "restart" : "Avtorestart",
+        "more" : "ko'proq ko'rsatish",
+        "automat" : "avtomat",
+        "semiautomat" : "yarim avtomat",
+        "director" : "Direktor",
+        "vice" : "Direktor o'rinbosari",
+        "manager" : "Sotuv Menejeri",
+        "credit" : "Kredit Menejeri",
+        "team" : "Bizning jamoa"
     }
 }

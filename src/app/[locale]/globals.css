@@ -63,4 +63,30 @@ input{
     } 
 }
 
+.tooltipText{
+  position: absolute;
+  top: -100%;
+  white-space: nowrap;
+  border-radius: 5px;
+  visibility: hidden;
+  opacity: 0;
+  padding: 0 2px;
+}
+.tooltipText::before{
+  content: '';
+  position: absolute;
+  left: 20%;
+  top: 85%;
+  transform: rotate(45deg);
+  border: 3px solid;
+}
+.tooltip{
+  position: relative;
+}
+.tooltip:hover .tooltipText{
+  opacity: 1;
+  visibility: visible;
+  /* transform: 3s ease ; */
+}
+
 

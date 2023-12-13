@@ -53,6 +53,19 @@
         "range" : "range",
         "air" : "air conditioning",
         "smartphone" : "smartphone",
-        "wash" : "washing machine"
+        "wash" : "washing machine",
+        "support" : "Support voice search with remote control",
+        "surface" : "Cooking surface type",
+        "ovendoor" : "Removable oven door glass",
+        "electricignition" : "Cooktop burners electric ignition",
+        "restart" : "Autorestart",
+        "more" : "see more",
+        "automat" : "automatic",
+        "semiautomat" : "semi-automatic",
+        "director" : "Director",
+        "vice" : "Deputy Director",
+        "manager" : "Sales Manager",
+        "credit" : "Credit Manager",
+        "team" : "Our team"
     }
 }
